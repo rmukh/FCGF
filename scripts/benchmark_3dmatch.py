@@ -29,7 +29,7 @@ fileName = datetime.datetime.now().strftime("%d_%m_%Y-%H_%M")
 rootLogger = logging.getLogger()
 rootLogger.setLevel(logging.INFO)
 
-fileHandler = logging.FileHandler("{0}.log".format(fileName))
+fileHandler = logging.FileHandler("{0}_.txt".format(fileName))
 fileHandler.setFormatter(logFormatter)
 rootLogger.addHandler(fileHandler)
 
